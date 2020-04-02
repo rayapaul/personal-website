@@ -14,7 +14,7 @@ a{
 hr{
     margin: 3rem auto;
     border-style: none none dotted;
-    width: 15%;
+    width: 8%;
     border-width: 6px;
     color: #888;
 }
@@ -105,16 +105,9 @@ hr{
     color: #666;
 }
 
-.content .bio{
-    text-align: justify;
-}
-
 .content .bio p{
+    text-align: justify;
     line-height: 1.2;
-}
-
-.content .project{
-    margin-top: 3rem;
 }
 
 .content .project .project-item{
@@ -161,4 +154,35 @@ hr{
     background: #000;
     color: #fff;
     cursor: pointer;
+}
+
+@media(max-width:700px){
+    hr{
+        width: 15%;
+    }
+    .sidebar{
+        width: 100%;
+        position: relative;
+    }
+
+    .content{
+        margin-left: 0;
+        padding: 1.5rem 2rem;
+        text-align: center;
+    }
+
+    .content .project .project-item{
+        flex-direction: column;
+        box-shadow: 1px 1px 10px #888;
+    }
+
+    .content .project .project-item img{
+        margin: 10px auto 10px auto;
+    }
+
+    .content .project .project-item .project-item-content{
+        margin: 0;
+        width: auto;
+        padding: 0 10px;
+    }
 }
